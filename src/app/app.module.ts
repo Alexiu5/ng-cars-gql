@@ -4,10 +4,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { HomeComponent } from './layouts/home/home.component';
-import { MaterialModule } from './material/material.module';
 import { NgModule } from '@angular/core';
-import { CardOwnersComponent } from './components/card-owners/card-owners.component';
+import { HomeComponent } from './features/home/home.component';
+import { CardOwnersComponent } from './features/components/card-owners/card-owners.component';
+import { MaterialModule } from 'src/material/material.module';
 @NgModule({
   declarations: [
     AppComponent,
