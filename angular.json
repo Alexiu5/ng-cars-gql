@@ -28,8 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass",
-              "../node_modules/bootstrap/dist/css/bootstrap.css"
+              "src/styles.sass"
             ],
             "stylePreprocessorOptions":{
               "includePaths": [
@@ -47,7 +46,7 @@
                 }
               ],
               "optimization": true,
-              "outputHash|g": "all",
+              "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
