@@ -3,26 +3,19 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgModule } from '@angular/core';
-import { HomeComponent } from './features/home/home.component';
-import { CardOwnersComponent } from './features/components/card-owners/card-owners.component';
 import { MaterialModule } from 'src/material/material.module';
+import { HomeComponent } from './features/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    CardOwnersComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
-    FlexLayoutModule.withConfig({
-      useColumnBasisZero: false,
-      printWithBreakpoints: ['md', 'lt-lg', 'lt-xl', 'gt-sm', 'gt-xs']
-    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
