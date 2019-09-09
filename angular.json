@@ -29,8 +29,13 @@
             ],
             "styles": [
               "src/styles.sass",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "../node_modules/bootstrap/dist/css/bootstrap.css"
             ],
+            "stylePreprocessorOptions":{
+              "includePaths": [
+                "../node_modules/bootstrap/scss"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -42,7 +47,7 @@
                 }
               ],
               "optimization": true,
-              "outputHashing": "all",
+              "outputHash|g": "all",
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
