@@ -8,8 +8,10 @@
 </div>
 
 
-<div class="container">
-  <div class="row d-flex justify-content-center">
-
+<div class="container cars-content">
+  <div class="row d-flex justify-content-left flex-wrap flex-row" *ngFor="let item of items let i = index">
+    <div class="col-md-4">
+      <app-car-card [id]="i"></app-car-card>
+    </div>
   </div>
 </div>

@@ -6,6 +6,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
+  public items = [
+    {
+      content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique sunt possimus?'
+    },
+    {
+      content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique sunt possimus?'
+    },
+    {
+      content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique sunt possimus?'
+    },
+    {
+      content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique sunt possimus?'
+    },
+    {
+      content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique sunt possimus?'
+    },
+    {
+      content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique sunt possimus?'
+    },
+    {
+      content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique sunt possimus?'
+    },
+    {
+      content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique sunt possimus?'
+  }];
 
   constructor() { }
 

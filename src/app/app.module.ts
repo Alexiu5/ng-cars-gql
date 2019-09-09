@@ -6,10 +6,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterialModule } from 'src/material/material.module';
 import { HomeComponent } from './features/home/home.component';
+import { CarCardComponent } from './features/componets/car-card/car-card.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    CarCardComponent
   ],
   imports: [
     BrowserModule,
