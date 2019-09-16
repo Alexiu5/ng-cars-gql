@@ -1,17 +1,19 @@
-<div class="container-fluid">
-  <div class="row d-flex justify-content-center">
-    <div class="col-md-6 d-flex flex-column align-items-center banner-title">
-      <h1 class="title">Hello stranger</h1>
-      <h3 class="subtitled">This i'll be a car app for sure</h3>
+<div class="container-fluid d-flex flex-column">
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-8 col-sm-12 d-flex flex-column align-items-center banner-title">
+        <h1 class="title">Hello stranger</h1>
+        <h3 class="subtitled">This i'll be a car app for sure</h3>
+      </div>
     </div>
   </div>
-</div>
 
 
-<div class="container cars-content">
-  <div class="row d-flex justify-content-left flex-wrap flex-row" *ngFor="let item of items let i = index">
-    <div class="col-md-4">
-      <app-car-card [id]="i"></app-car-card>
+  <div class="container cars-content">
+    <div class="row d-flex flex-wrap flex-row">
+      <ng-container *ngFor="let item of items let i = index">
+        <app-car-card [id]="i" class="col-lg-4 col-md-6 col-sm-12"></app-car-card>
+      </ng-container>
     </div>
   </div>
 </div>
