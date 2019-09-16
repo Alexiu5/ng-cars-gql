@@ -7,6 +7,7 @@ import { NgModule } from '@angular/core';
 import { MaterialModule } from 'src/material/material.module';
 import { HomeComponent } from './features/home/home.component';
 import { CarCardComponent } from './features/components/car-card/car-card.component';
+import { CoreModule } from './core/core.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import { CarCardComponent } from './features/components/car-card/car-card.compon
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
+    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

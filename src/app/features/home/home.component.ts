@@ -30,6 +30,9 @@ export class HomeComponent implements OnInit {
     },
     {
       content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique sunt possimus?'
+    },
+    {
+      content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique sunt possimus?'
   }];
 
   constructor() { }
