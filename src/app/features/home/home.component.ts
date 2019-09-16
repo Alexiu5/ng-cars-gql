@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Subscriber, Subscription } from 'rxjs';
 import { Car } from 'src/app/core/interfaces/Car';
 import { CarService } from 'src/app/core/services/car/car.service';
 
@@ -38,11 +38,14 @@ export class HomeComponent implements OnInit {
       content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique sunt possimus?'
   }];
 
-  public cars: Observable<Car>;
+  public cars: Subscription;
+  public carsData: Car[];
   constructor(private carService: CarService) { }
 
   ngOnInit() {
-    this.cars = this.carService.getAllCars();
+    this.cars = this.carService.getAllCars().subscribe( res => {
+        console.log(res)
+    });
   }
 
 }
