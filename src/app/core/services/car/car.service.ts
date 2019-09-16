@@ -8,10 +8,13 @@ import { ConfigService } from '../../config.service';
 })
 export class CarService {
 
-  constructor(private http: HttpClient, private configService: ConfigService) { }
+  constructor(
+      private http: HttpClient,
+      private configService: ConfigService
+  ) { }
 
   getAllCars(): Observable<Car> {
-    const response: Observable<Car> = this.http.get<Car>(`${this.configService.getBaseUrl}/cars`);
+    const response: Observable<Car> = this.http.get<Car>(`${this.configService.getBaseUrl()}/cars`);
     return response;
   }
 }

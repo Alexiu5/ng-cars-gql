@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
 import { EnviromentService } from './enviroment.service';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ConfigService {
   config = {
     baseUrl: ''

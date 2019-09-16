@@ -1,13 +1,13 @@
-import { AppComponent } from './app.component';
-
-import { AppRoutingModule } from './app-routing.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterialModule } from 'src/material/material.module';
 import { HomeComponent } from './features/home/home.component';
-import { CarCardComponent } from './features/components/car-card/car-card.component';
 import { CoreModule } from './core/core.module';
+import { CarCardComponent } from './features/components/car-card/car-card.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+
 @NgModule({
   declarations: [
     AppComponent,

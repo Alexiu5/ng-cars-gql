@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class EnviromentService {
   // tslint:disable-next-line: ban-types
   enviroment: Object;
