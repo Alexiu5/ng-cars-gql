@@ -13,8 +13,8 @@ export class CarService {
       private configService: ConfigService
   ) { }
 
-  getAllCars(): Observable<Car> {
-    const response: Observable<Car> = this.http.get<Car>(`${this.configService.getBaseUrl()}/cars`);
+  getAllCars(): Observable<Car[]> {
+    const response: Observable<Car[]> = this.http.get<Car[]>(`${this.configService.getBaseUrl()}/cars`);
     return response;
   }
 }

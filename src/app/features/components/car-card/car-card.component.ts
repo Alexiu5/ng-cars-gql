@@ -6,20 +6,25 @@ import { Car } from 'src/app/core/interfaces/Car';
   selector: 'app-car-card',
   template: `
       <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">{{car | json}}</h4>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique sunt possimus?</p>
+        <div class="card-image"></div>
+
+        <div class="card-content">
+          <h4 class="sub-years">{{car.brand}} {{car.title}} <figcaption id="separator"></figcaption>  {{car.age}} years old</h4>
+          <h2>Tesla - XSTR</h2>
+          <p>This is a sample</p>
         </div>
+
       </div>
   `,
   styleUrls: ['./car-card.component.sass']
 })
 export class CarCardComponent implements OnInit {
-  @Input() car: Observable<Car>;
+  @Input() car: Car;
 
   constructor() { }
 
   ngOnInit() {
+    console.log(this.car);
   }
 
 }

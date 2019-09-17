@@ -38,14 +38,11 @@ export class HomeComponent implements OnInit {
       content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique sunt possimus?'
   }];
 
-  public cars: Subscription;
-  public carsData: Car[];
+  public cars$: Observable<Car[]>;
   constructor(private carService: CarService) { }
 
   ngOnInit() {
-    this.cars = this.carService.getAllCars().subscribe( res => {
-        console.log(res)
-    });
+    this.cars$ = this.carService.getAllCars();
   }
 
 }
