@@ -6,7 +6,9 @@ import { Car } from 'src/app/core/interfaces/Car';
   selector: 'app-car-card',
   template: `
       <div class="card">
-        <div class="card-image"></div>
+        <div class="card-image-container">
+          <div class="card-image" [ngStyle]="{'background-image': getUrlBackground(car.imageUrl)}"></div>
+        </div>
 
         <div class="card-content">
           <h4 class="sub-years">{{car.brand}} {{car.title}} <figcaption id="separator"></figcaption>  {{car.age}} years old</h4>
@@ -18,13 +20,17 @@ import { Car } from 'src/app/core/interfaces/Car';
   `,
   styleUrls: ['./car-card.component.sass']
 })
+
 export class CarCardComponent implements OnInit {
   @Input() car: Car;
 
   constructor() { }
 
   ngOnInit() {
-    console.log(this.car);
   }
 
+
+  getUrlBackground(url: string): string {
+    return `url(${url})`;
+  }
 }
