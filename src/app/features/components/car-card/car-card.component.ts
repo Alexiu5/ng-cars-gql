@@ -12,8 +12,8 @@ import { Car } from 'src/app/core/interfaces/Car';
 
         <div class="card-content">
           <h4 class="sub-years">{{car.brand}} {{car.title}} <figcaption id="separator"></figcaption>  {{car.age}} years old</h4>
-          <h2>Tesla - XSTR</h2>
-          <p>This is a sample</p>
+          <h2>{{car.price | currency:'USD'}}</h2>
+          <p>{{car.owner_id}}</p>
         </div>
 
       </div>
